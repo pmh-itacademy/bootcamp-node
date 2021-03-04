@@ -1,2 +1,2 @@
-# bootcamp-node
+# bootcamp node
 IT Academy - Bootcamp node: ejercicios
