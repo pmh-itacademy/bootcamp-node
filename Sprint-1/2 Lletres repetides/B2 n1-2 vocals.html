@@ -1,0 +1,33 @@
+<!-- Sprint 1 Bloc 2 Nivell 1 Ex 2 - Pilar Mingueza  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nivell 1 exercici 2</title>
+</head>
+
+<body>
+  <script>
+    //  Nom a array
+    let nom = "Pilar Mingu3za";
+    let arrayNom = nom.split("");
+
+    console.log("Partim del nom : " + nom);
+
+    // Buscar vocals, consonants i números
+    for (let i = 0; i < arrayNom.length; i++) {
+      if (arrayNom[i].match(/[aeiou]/i)) {
+        console.log("He trobat una vocal: " + arrayNom[i]);
+      }
+      else if (arrayNom[i].match(/[bcdfghjklmnpqrstuvwxyz]/i)) {
+        console.log("He trobat una consonant: " + arrayNom[i]);
+      }
+      else if (arrayNom[i].match(/[0-9]/i)) {
+        console.log("Els noms de persona no contenen el numero: " + arrayNom[i]);
+      }
+    }
+
+  </script>
+</body>
+
+</html>

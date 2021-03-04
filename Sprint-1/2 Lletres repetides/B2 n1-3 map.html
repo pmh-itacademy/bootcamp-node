@@ -1,0 +1,36 @@
+<!-- Sprint 1 Bloc 2 Nivell 1 Ex 3 - Pilar Mingueza  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nivell 1 exercici 3</title>
+</head>
+
+<body>
+  <script>
+    let nom = "Pilar Mingueza";
+    nom = nom.toUpperCase();
+    let arrayNom = nom.split("");
+    let lletres = new Map();
+
+    console.log("Partim del nom : " + nom);
+
+    // guarda contadores de letras en el map
+    for (let i = 0; i < arrayNom.length; i++) {
+
+      if (lletres.has(arrayNom[i])) {
+        let j = lletres.get(arrayNom[i]) + 1;
+        lletres.set(arrayNom[i], j);
+      }
+      else {
+        lletres.set(arrayNom[i], 1);
+      }
+    }
+
+    // Muestra contadores de las letras en consola
+    console.log(lletres);
+
+  </script>
+</body>
+
+</html>

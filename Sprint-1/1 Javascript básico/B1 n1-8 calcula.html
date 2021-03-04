@@ -1,0 +1,40 @@
+<!-- Sprint 1 Bloc 1 Nivell 1 Ex 8 - Pilar Mingueza  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nivell 1 exercici 8</title>
+</head>
+
+<body>
+  <p id="calcula"></p>
+
+  <script>
+    // Recollir números i operador    
+    const num1 = parseInt(prompt("Escriu el primer número:"));
+    const num2 = parseInt(prompt("Escriu el segon número:"));
+    const oper = prompt("Escriu l'operador:");
+    let resultat = calculadora(num2, num1, oper);
+    document.getElementById("calcula").innerHTML = resultat;
+
+    function calculadora(num1, num2, oper) {
+      var missatge = "El resultat de " + num1 + " " + oper + " " + num2 + " és: ";
+      switch (oper) {
+        case "+":
+          missatge += num1 + num2;
+          break;
+        case '-':
+          missatge += num1 - num2;
+          break;
+        case "*":
+          missatge += num1 * num2;
+          break;
+        default:
+          missatge = "Operació no soportada.";
+      }
+      return missatge;
+    }
+  </script>
+</body>
+
+</html>
